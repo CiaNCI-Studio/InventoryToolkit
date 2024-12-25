@@ -1,0 +1,303 @@
+[gd_scene load_steps=3 format=3 uid="uid://xapcfvyw4ot7"]
+
+[ext_resource type="Script" path="res://examples/inventory.gd" id="1_dl8yc"]
+[ext_resource type="Texture2D" uid="uid://b635f2xddrw4c" path="res://examples/InventoryShortCut.png" id="2_kficr"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dl8yc")
+
+[node name="HUD" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Item1" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -287.0
+offset_top = -67.0
+offset_right = -226.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Item2" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -212.0
+offset_top = -67.0
+offset_right = -151.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Item3" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -67.0
+offset_right = -79.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Item4" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -67.0
+offset_right = -5.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Item5" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = -67.0
+offset_right = 68.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Item6" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 80.0
+offset_top = -67.0
+offset_right = 141.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Item7" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 153.0
+offset_top = -67.0
+offset_right = 214.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Item8" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 225.0
+offset_top = -67.0
+offset_right = 286.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+expand_mode = 3
+stretch_mode = 5
+
+[node name="ItemLabel1" type="Label" parent="HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -290.0
+offset_top = -70.0
+offset_right = -223.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "0"
+horizontal_alignment = 2
+
+[node name="ItemLabel2" type="Label" parent="HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -216.0
+offset_top = -70.0
+offset_right = -149.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "0"
+horizontal_alignment = 2
+
+[node name="ItemLabel3" type="Label" parent="HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -142.0
+offset_top = -70.0
+offset_right = -75.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "0"
+horizontal_alignment = 2
+
+[node name="ItemLabel4" type="Label" parent="HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -69.0
+offset_top = -70.0
+offset_right = -2.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "0"
+horizontal_alignment = 2
+
+[node name="ItemLabel5" type="Label" parent="HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -70.0
+offset_right = 70.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "0"
+horizontal_alignment = 2
+
+[node name="ItemLabel6" type="Label" parent="HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 77.0
+offset_top = -70.0
+offset_right = 144.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "0"
+horizontal_alignment = 2
+
+[node name="ItemLabel7" type="Label" parent="HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 149.0
+offset_top = -70.0
+offset_right = 216.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "0"
+horizontal_alignment = 2
+
+[node name="ItemLabel8" type="Label" parent="HUD"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 223.0
+offset_top = -70.0
+offset_right = 290.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "0"
+horizontal_alignment = 2
+
+[node name="Frame" type="TextureRect" parent="HUD"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -293.0
+offset_top = -75.0
+offset_right = 293.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("2_kficr")
+expand_mode = 5
+stretch_mode = 5
+
+[connection signal="InventoryUpdate" from="." to="." method="_on_inventory_update"]

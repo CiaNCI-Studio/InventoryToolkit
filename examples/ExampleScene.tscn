@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://frdj0ec2coaq"]
+
+[ext_resource type="PackedScene" uid="uid://xapcfvyw4ot7" path="res://examples/Inventory.tscn" id="1_j50do"]
+
+[node name="ExampleScene" type="Node2D"]
+
+[node name="Inventory" parent="." instance=ExtResource("1_j50do")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+grow_vertical = 0

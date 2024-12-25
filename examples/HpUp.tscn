@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwmw0mgenb5pm"]
+
+[ext_resource type="Script" path="res://addons/inventoryToolkit/ItemBase.gd" id="1_o76bm"]
+[ext_resource type="PackedScene" uid="uid://clpsj02wstn4t" path="res://examples/heart_item.tscn" id="2_2m8je"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xwguu"]
+radius = 0.440674
+
+[node name="HpUp" type="StaticBody3D" groups=["itens"]]
+transform = Transform3D(0.778747, 0, 0.627338, 0, 1, 0, -0.627338, 0, 0.778747, 0, 0, 0)
+script = ExtResource("1_o76bm")
+Id = "1"
+TypeId = "1"
+Name = "HpUp"
+Description = "Recover 50 Hp"
+ImageRef = "res://examples/HpIcon.svg"
+Commands = Array[String](["50"])
+MaxStack = 5
+
+[node name="HeartItem" parent="." instance=ExtResource("2_2m8je")]
+transform = Transform3D(0.282843, 0, -0.282843, 0, 0.4, 0, 0.282843, 0, 0.282843, 0, 0.146177, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_xwguu")
